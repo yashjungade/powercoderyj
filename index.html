@@ -40,6 +40,12 @@
             .skill:hover {
                 height: 60px; width: 60px;
             }
+            .skillpro {
+                background-color: rgba(0, 0, 0, 0.25); height:100px; width:100px; border-radius: 10px;
+            }
+            .skilprol:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
             .card {
                 background-color: transparent; border-radius: 20px; height: 400px; width: 300px; color: black; margin: auto; display:inline-block
             }
@@ -50,7 +56,11 @@
                 background-color: white; width: 290px; height: 380px; border-radius: 20px;
             }
             .cardDetail:hover {
-                height: 400px; width: 300px;
+                height: 400px; width: 300px; animation: rotate 2s;
+            }
+            @keyframes rotate {
+                0%{transform: rotateY(360deg)}
+                
             }
             @media (max-width: 1000px){
             .page1 {
@@ -118,10 +128,31 @@
         </div><br>
     </div>
     <div class="page" style="background-color: rgba(0,0,0, 0.20);">
-        <h1>Specialization</h1>
-        <div class="card"><div class="cardDetail"><h2>Software</h2></div></div>
-        <div class="card"><div class="cardDetail"><h2>Hardware</h2></div></div>
-        <div class="card"><div class="cardDetail"><h2>Designing</h2></div></div>
+        <h1>Portfolio</h1>
+        <div class="card"><div class="cardDetail">
+            <h2>Software</h2>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+        </div></div>
+        <div class="card"><div class="cardDetail">
+            <h2>Hardware</h2>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+        </div></div>
+        <div class="card"><div class="cardDetail">
+            <h2>Designing</h2>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+            <img class="skillpro"></img>
+        </div></div>
     </div>
     <div style="margin: auto; text-align: center; padding: 10px;">
         <h1>Contact</h1>

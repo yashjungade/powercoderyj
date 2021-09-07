@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yash Jungade</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            /* width */
+            ::-webkit-scrollbar {
+            width: 5px;
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+              background: whitesmoke;
+            }
+
+            body {
+                animation: color 3s infinite alternate;
+                font-family: sans-serif; color: white;font-family:cursive;
+            }
+            @keyframes color {
+                0%{background-color: rgb(71, 0, 35);}
+                100%{background-color: rgb(63, 0, 71);}
+            }
+            h1{font-size:45px;}
+            .page {
+                min-height: 100vh; text-align:center; padding: 20px
+            }
+            .page1 {
+                width: 40%; float: left;
+            }
+            .skillbar {
+                background-color: rgba(0,0,0, 0.20); padding:5px; border-radius: 20px; margin: auto; width: 70%
+            }
+            .skill {
+                background-color: white; height:50px; width:50px; border-radius: 10px;
+            }
+            .skill:hover {
+                height: 60px; width: 60px;
+            }
+            .card {
+                background-color: transparent; border-radius: 20px; height: 400px; width: 300px; color: black; margin: auto; display:inline-block
+            }
+            .card:hover{
+                height: 420px; width: 320px;
+            }
+            .cardDetail {
+                background-color: white; width: 290px; height: 380px; border-radius: 20px;
+            }
+            .cardDetail:hover {
+                height: 400px; width: 300px;
+            }
+            @media (max-width: 1000px){
+            .page1 {
+                width: 100%; float: none;
+            }
+            .card {
+                float: none;
+            }
+            }
+        </style>
+    </head>
+    <body>
+    <div class="page">
+        <div class="page1">
+            <img src="Images/Photo.png" style="border-radius: 10%;"></img>
+        </div>
+        <div>
+            <h1>YASH JUNGADE</h1><br>
+            <h2>'The only perfect time to express our ideas is ticking now'</h2>
+            <h2>Being an engineering student, I focus on learning, developing & implementing ideas.</h2>
+        </div>
+    </div>
+    <div class="page" style="background-color: rgba(0,0,0, 0.20)">
+        <h1>About</h1>
+        <h2 style="padding-left: 10%; padding-right: 10%;">Hi, I'm Yash!<br><br>I am pursuing Bachelor of Electronics Engineering from Vidyalankar Institute of Technology, Mumbai. I am interested in App Development & building Embedded IoT Devices. I am enthusiast of AR and VR technology. Graphic Designing, Trekking, & Cooking are my all time favourite hobbies. I am also learning musical instruments including guitar & flute.</h2>
+    </div>
+    <div class="page">
+        <h1>Tech Stack</h1>
+        <div class="skillbar">
+            <p>Programming Languages</p>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+        </div><br>
+        <div class="skillbar">
+            <p>Software Tools</p>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+        </div><br>
+        <div class="skillbar">
+            <p>Hardware Tools</p>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+        </div><br>
+        <div class="skillbar">
+            <p>Cloud Services</p>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+        </div><br>
+        <div class="skillbar">
+            <p>Designing</p>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+            <img class="skill"></img>
+        </div><br>
+    </div>
+    <div class="page" style="background-color: rgba(0,0,0, 0.20);">
+        <h1>Specialization</h1>
+        <div class="card"><div class="cardDetail"><h2>Software</h2></div></div>
+        <div class="card"><div class="cardDetail"><h2>Hardware</h2></div></div>
+        <div class="card"><div class="cardDetail"><h2>Designing</h2></div></div>
+    </div>
+    <div style="margin: auto; text-align: center; padding: 10px;">
+        <h1>Contact</h1>
+        <img class="skill"></img>
+        <img class="skill"></img>
+        <img class="skill"></img>
+        <img class="skill"></img>
+        <img class="skill"></img>
+        <h2>@ Yash Jungade</h2>
+    </div>
+    </body>
+</html>

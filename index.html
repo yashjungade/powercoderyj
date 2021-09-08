@@ -28,6 +28,25 @@
             .page {
                 min-height: 100vh; text-align:center; padding: 20px
             }
+            .roler:before{
+                content: 'I am Developer';
+                font-size: 35px;
+                animation: head 10s infinite;
+            }
+            @keyframes head {
+                0% {opacity:1; font-size: 35px; content: "I am Developer"}
+                8% {opacity:0; font-size: 25px;}
+                16% {opacity:1; font-size: 35px;}
+                24% {opacity:1; font-size: 35px; content: "I am Designer"}
+                32% {opacity:0; font-size: 25px;}
+                40% {opacity:1; font-size: 35px;}
+                48% {opacity:1; font-size: 35px; content: "I am Engineer"}
+                56% {opacity:0; font-size: 25px;}
+                64% {opacity:1; font-size: 35px;}
+                72% {opacity:1; font-size: 35px; content: "I am Volunteer"}
+                80% {opacity:0; font-size: 25px;}
+                100% {opacity:1; font-size: 35px;}
+            }
             .skillbar {
                 background-color: rgba(0,0,0, 0.20); padding:5px; border-radius: 20px; margin: auto; width: 70%
             }
@@ -73,8 +92,7 @@
     <div class="page">
             <img src="Images/Photo.png" style="border-radius: 10%; height: 60vh;"></img>
             <h1>YASH JUNGADE</h1>
-            <h2>'The only perfect time to express our ideas is ticking now'</h2>
-            <h2>Being an engineering student, I focus on learning, developing & implementing ideas.</h2>
+            <h1 class="roler" style="font-size: 35px;"></h1>
     </div>
     <div class="page" style="background-color: rgba(0,0,0, 0.20)">
         <h1>About</h1>
@@ -176,7 +194,9 @@
             <img style="width: 250px; border-radius: 20px;" src="Images/attendo.png"></img>
         </div></div></a>
     </div>
-    <div style="margin: auto; text-align: center; padding: 10px;">
+    <div style="margin: auto; text-align: center; padding: 20px;">
+        <h2 style="font-family: cursive;">The only perfect time to express our ideas is ticking now</h2>
+    </div><div style="margin: auto; text-align: center; padding: 10px; background-color: rgba(0,0,0, 0.20)">
         <h1>Contact</h1>
             <a href="https://www.linkedin.com/in/yash-jungade-731651191/" target="/"><img class="skill" src="Images/In.png"></img></a>
             <a href="https://github.com/yashjungade" target="/"><img class="skill" src="Images/git.png"></img></a>

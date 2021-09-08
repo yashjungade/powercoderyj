@@ -47,20 +47,26 @@
                 background-color: rgba(0, 0, 0, 0.5);
             }
             .card {
-                background-color: transparent; border-radius: 20px; height: 400px; width: 300px; color: black; margin: auto; display:inline-block
+                background-color: transparent; border-radius: 20px; height: 400px; width: 300px; 
+                color: black; margin: auto; display:inline-block
             }
             .card:hover{
                 height: 420px; width: 320px;
             }
             .cardDetail {
-                background-color: white; width: 290px; height: 380px; border-radius: 20px;
+                animation: rotate 2s alternate infinite;
+                background-color: rgb(255, 206, 70); width: 290px; height: 380px; border-radius: 20px;
             }
             .cardDetail:hover {
-                height: 400px; width: 300px; animation: rotate 2s;
+                animation: none;
+                height: 400px; width: 300px;
             }
             @keyframes rotate {
-                0%{transform: rotateY(360deg)}
-                
+                0%{transform: rotateZ(-5deg)}
+                100%{transform: rotateZ(5deg)}
+            }
+            .cardDes {
+                height: 200px; padding-left: 20px; padding-right: 20px;
             }
             @media (max-width: 1000px){
             .page1 {
@@ -92,74 +98,71 @@
         <div class="skillbar">
             <p>Programming Languages</p>
             <img class="skill" src="Images/c.png" title="C Programming"></img>
-            <img class="skill" src="Images/cpp.png"></img>
-            <img class="skill" src="Images/java.png" ></img>
-            <img class="skill" src="Images/py.png"></img>
-            <img class="skill" src="Images/dart.png"></img>
+            <img class="skill" src="Images/cpp.png" title="C++"></img>
+            <img class="skill" src="Images/java.png" title="Java"></img>
+            <img class="skill" src="Images/py.png" title="Python"></img>
+            <img class="skill" src="Images/dart.png" title="Dart"></img>
         </div><br>
         <div class="skillbar">
             <p>Software Tools</p>
-            <img class="skill" src="Images/android.png"></img>
-            <img class="skill" src="Images/vs.png"></img>
-            <img class="skill" src="Images/conda.png"></img>
-            <img class="skill" src="Images/pyc.png"></img>
-            <img class="skill" src="Images/unity.png"></img>
-            <img class="skill" src="Images/unreal.png"></img>
-            <img class="skill" src="Images/flutter.png"></img>
+            <img class="skill" src="Images/android.png" title="Android Studio"></img>
+            <img class="skill" src="Images/vs.png" title="Visual Studio"></img>
+            <img class="skill" src="Images/conda.png" title="Anaconda"></img>
+            <img class="skill" src="Images/pyc.png" title="Pycharm"></img>
+            <img class="skill" src="Images/unity.png" title="Unity IDE"></img>
+            <img class="skill" src="Images/unreal.png" title="Unreal Engine"></img>
+            <img class="skill" src="Images/flutter.png" title="Flutter"></img>
         </div><br>
         <div class="skillbar">
             <p>Hardware Tools</p>
-            <img class="skill" src="Images/uno.png"></img>
-            <img class="skill" src="Images/esp.png"></img>
-            <img class="skill" src="Images/node.png"></img>
+            <img class="skill" src="Images/uno.png" title="Arduino Uno"></img>
+            <img class="skill" src="Images/esp.png" title="ESP-8266ex"></img>
+            <img class="skill" src="Images/node.png" title="NodeMCU"></img>
         </div><br>
         <div class="skillbar">
             <p>Cloud Services</p>
-            <img class="skill" src="Images/fb.png"></img>
-            <img class="skill" src="Images/blynk.png"></img>
-            <img class="skill" src="Images/thingspeak.png"></img>
+            <img class="skill" src="Images/fb.png" title="Firebase"></img>
+            <img class="skill" src="Images/blynk.png" title="Blynk"></img>
+            <img class="skill" src="Images/thingspeak.png" title="Thingspeak"></img>
         </div><br>
         <div class="skillbar">
-            <p>Designing</p>
-            <img class="skill" src="Images/corel.png"></img>
-            <img class="skill" src="Images/ps.png"></img>
-            <img class="skill" src="Images/ink.png"></img>
+            <p>Designing Tools</p>
+            <img class="skill" src="Images/corel.png" title="CorelDraw"></img>
+            <img class="skill" src="Images/ps.png" title="Photoshop"></img>
+            <img class="skill" src="Images/ink.png" title="Inkscape"></img>
         </div><br>
     </div>
     <div class="page" style="background-color: rgba(0,0,0, 0.20);">
         <h1>Portfolio</h1>
-        <div class="card"><div class="cardDetail">
-            <h2>Software</h2>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
+        <div class="card"><div class="cardDetail"><br>
+            <div class="cardDes">
+                <h2>Yash Prints</h2>
+                <p>Welcome to your beloved place for all your office printing stationary. This business site is developed using HTML & CSS.</p>
+            </div>
+            <img style="width: 250px; border-radius: 20px;" src="Images/yp.png"></img>
         </div></div>
-        <div class="card"><div class="cardDetail">
-            <h2>Hardware</h2>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
+        <div class="card"><div class="cardDetail"><br>
+            <div class="cardDes">
+                <h2>CampusDine</h2>
+                <p>CampusDine is food ordering application for college canteens. This is developed using flutter & firebase.</p>
+            </div>
+            <img style="width: 250px; border-radius: 20px;" src="Images/cd.png"></img>
         </div></div>
-        <div class="card"><div class="cardDetail">
-            <h2>Designing</h2>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
-            <img class="skillpro"></img>
+        <div class="card"><div class="cardDetail"><br>
+            <div class="cardDes">
+                <h2>Iot</h2>
+                <p>I have developed toy car, air pollution monitor, data logger, obstacle avoidance robot & many more embedded systems.</p>
+            </div>
+            <img style="width: 250px; border-radius: 20px;" src="Images/iot.png"></img>
         </div></div>
     </div>
     <div style="margin: auto; text-align: center; padding: 10px;">
         <h1>Contact</h1>
-            <img class="skill" src="Images/In.png"></img>
-            <img class="skill" src="Images/git.png"></img>
-            <img class="skill" src="Images/mail.png"></img>
-            <img class="skill" src="Images/twitter.png"></img>
-            <img class="skill" src="Images/insta.png"></img>
+            <a href="https://www.linkedin.com/in/yash-jungade-731651191/" target="/"><img class="skill" src="Images/In.png"></img></a>
+            <a href="https://github.com/yashjungade" target="/"><img class="skill" src="Images/git.png"></img></a>
+            <a href="mailto:yjungade123@gmail.com" target="/"><img class="skill" src="Images/mail.png"></img></a>
+            <a href="https://twitter.com/YashJungade" target="/"><img class="skill" src="Images/twitter.png"></img></a>
+            <a href="https://www.instagram.com/yjungade/" target="/"><img class="skill" src="Images/insta.png"></img></a>
         <h2>@ Yash Jungade</h2>
     </div>
     </body>
